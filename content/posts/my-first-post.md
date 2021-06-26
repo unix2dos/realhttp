@@ -2,10 +2,10 @@
 title: My First Post
 date: 2021-06-26T23:38:12+08:00
 lastmod: 2021-06-26T23:38:12+08:00
-author: Author Name
-# avatar: /img/author.jpg
+author: levonfly
+# avatar: /me/avatar.jpg
 # authorlink: https://author.site
-cover: /img/cover.jpg
+cover: /img/first.jpg
 # images:
 #   - /img/cover.jpg
 categories:
