@@ -29,4 +29,6 @@ cd public && git add --all && git commit -m "$msg"
 
 
 echo "Push to origin gh-pages"
+git pull origin gh-pages
 git push origin gh-pages
+rm -rf public
