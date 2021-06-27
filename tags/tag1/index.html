@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>404 Not Found | levonfly&#39;s Blog</title>
+    <title>tag1 | levonfly&#39;s Blog</title>
 
     
 
@@ -17,22 +17,22 @@
 
 <meta name="generator" content="Hugo 0.74.3" />
 
-<link rel="canonical" href="https://realhttp.com/404.html" />
+<link rel="canonical" href="https://realhttp.com/tags/tag1/" />
 
 
-<meta property="og:title" content="404 Page not found" />
+<meta property="og:title" content="tag1" />
 <meta property="og:description" content="levonfly 的生活记录~" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://realhttp.com/404.html" />
+<meta property="og:url" content="https://realhttp.com/tags/tag1/" />
 <meta property="og:image" content="https://realhttp.com/me/background.jpg"/>
-
+<meta property="og:updated_time" content="2021-06-26T23:56:27+08:00" />
 
 
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://realhttp.com/me/background.jpg"/>
 
-<meta name="twitter:title" content="404 Page not found"/>
+<meta name="twitter:title" content="tag1"/>
 <meta name="twitter:description" content="levonfly 的生活记录~"/>
 
 
@@ -117,18 +117,142 @@
         <section class="front">
           <div class="dream-max-width">
             
-<div class="dream-404-container">
-  <div class="ui basic center aligned segment">
+
+<header class="ui basic very padded segment dream-header">
+  
+  <div class="ui small circular image">
+    <img src="/me/avatar.jpg" alt="avatar" />
+  </div>
+  
+
+  <div class="content">
+    <h1 class="ui medium header">leconfly&#39;s Blog<span class="sub header">just do it</span>
+    </h1>
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="归档"></i>
+      </a>
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="所有分类"></i>
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="所有标签"></i>
+      </a>
+    </article>
+
     
-      <h1 class="ui header">
-        Oops...You are lost in dream.
-        <span class="sub header">Don't worry though, click the button below to wake up.</span>
-      </h1>
-      <p>
-        <button class="ui secondary button" onclick="window.location.href = 'https:\/\/realhttp.com\/'">返回首页</button>
-      </p>
+    
+    
+    
+    
+      
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+          <div class="dream-tags">
+          
+          
+          
+            <a class="ui label" href="/tags/tag1/" title="tag1">
+              tag1
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/tag2/" title="tag2">
+              tag2
+            </a>
+          
+          </div>
+    
+
     
   </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid">
+  
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://realhttp.com/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87/">
+    
+    <img src="/img/second.jpg" alt="第二篇" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87/">第二篇</a>
+    </h2>
+    <div class="meta">
+      <p class="date">
+        
+          <span data-format="luxon">2021-06-26T23:56:27&#43;08:00</span>
+        
+      </p>
+    </div>
+    <div class="description">
+      <p>dasdadada</p>
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author">@&nbsp;levonfly</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>1 分钟阅读</div>
+  </div>
+</article>
+
+  </div>
+  
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    <article class="ui attached segment card dream-card">
+  <a class="image" href="https://realhttp.com/posts/my-first-post/">
+    
+    <img src="/img/first.jpg" alt="My First Post" />
+    
+  </a>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="/posts/my-first-post/">My First Post</a>
+    </h2>
+    <div class="meta">
+      <p class="date">
+        
+          <span data-format="luxon">2021-06-26T23:38:12&#43;08:00</span>
+        
+      </p>
+    </div>
+    <div class="description">
+      <p>Cut out summary from your post content here.</p>
+<p>wo shi yi ge xiao fei ji</p>
+    </div>
+  </div>
+
+  <div class="extra content">
+    <div class="author">@&nbsp;levonfly</div>
+    <div class="reading-time">
+      <i class="clock icon"></i>1 分钟阅读</div>
+  </div>
+</article>
+
+  </div>
+  
+
+  
 </div>
 
 
@@ -328,7 +452,29 @@
 <script src="/js/main.js"></script>
 <script src="/js/theme.js"></script>
 
-     
+    
+
+
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"></script>
+
+<script>
+  format()
+
+  function format() {
+    $('span[data-format="luxon"]').each(function () {
+      var date = $(this).text()
+
+      $(this).text(luxon.DateTime.fromISO(date, { locale: "zh" }).toFormat("yyyy年MM月dd日"))
+    })
+  }
+</script>
+
+
+
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/grid.js"></script>
+
 
     
 
