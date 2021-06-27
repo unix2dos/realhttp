@@ -1,21 +1,32 @@
 #!/bin/sh
 
-echo "\033[0;32mDeploying updates to GitHub...\033[0m"
+#if [[ $(git status -s) ]]
+#then
+#	    echo "The working directory is dirty. Please commit any pending changes."
+#		    exit 1;
+#fi
 
-# Go To Public folder
-cd public
-# Add changes to git.
-git add .
+echo "Deleting old publication"
+rm -rf public
+mkdir public
+rm -rf .git/worktrees/public/
 
-# Commit changes.
+echo "Checking out gh-pages branch into public"
+git worktree add -B gh-pages public origin/gh-pages
+
+echo "Removing existing files"
+rm -rf public/*
+
+echo "Generating site"
+hugo -D
+
+echo "Updating gh-pages branch"
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
-  then msg="$1"
+	  then msg="$1"
 fi
-git commit -m "$msg"
+cd public && git add --all && git commit -m "$msg"
 
-# Push source and build repos.
-git push origin master
 
-# Come Back up to the Project Root
-cd ..
+echo "Push to origin gh-pages"
+git push origin gh-pages
