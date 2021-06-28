@@ -16,10 +16,23 @@ tags:
 # nolastmod: true
 ---
 
-Cut out summary from your post content here.
-
 wo shi yi ge xiao fei ji
 
 <!--more-->
 
 The remaining content of your post.
+
+
+
+
+![1](my-first-post/1.png)
+
+
+
+
+
+The remaining content of your post.
+
+
+
+![1](my-first-post/2.png)

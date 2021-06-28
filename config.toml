@@ -36,6 +36,8 @@ tabWidth = 4
 background = "#fff"
 backgroundImage = "/me/background.jpg"
 linkColor = "seagreen"
+#uglyURLs = true
+
 
 # dark mode
 # defaultDark = true
@@ -75,7 +77,7 @@ rss = true
 siteStartYear = 2021
 
 # 配置网站标签页上的 icon
-# favicon = ""
+favicon = "/me/favicon.ico"
 
 # search
 enableSearch = true
@@ -93,3 +95,8 @@ customJS = []
 jsDate = true
 jsDateFormat = "yyyy年MM月dd日"
 # jsDateFormat = "yyyy年MM月dd日，cccc"
+
+
+#[permalinks]
+#  posts = "/:year/:month/:title/"
+
